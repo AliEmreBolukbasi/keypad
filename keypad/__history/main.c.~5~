@@ -1,0 +1,27 @@
+#include <main.h>
+
+void main()
+{
+   char tus=0;
+   set_tris_d(0x0f);
+   while(TRUE)
+   {
+     tus=0;
+     output_d(0x00);
+     output_high(pin_d0);
+     if(input(d4)==1){
+     delay_ms(20);
+     tus=3;
+     }
+     if(input(d4)==1){
+     delay_ms(20);
+     tus=3;
+     }
+     if(input(d4)==1){
+     delay_ms(20);
+     tus=3;
+     }
+      output_low(pin_d0)
+   }
+
+}
